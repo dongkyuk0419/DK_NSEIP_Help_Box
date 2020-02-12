@@ -1,11 +1,20 @@
 {
  "dependencies":{
+   "PackMan":{
+    "Name":"PackMan",
+    "Branch":"master",
+    "Url":"https://github.com/OmidS/PackMan.git",
+    "FolderName":"PackMan",
+    "Commit":"",
+    "GetLatest":true
+   },
+
   "PesaranDataTools":{
    "Name":"PesaranDataTools",
    "Branch":"master",
    "Url":"https://github.com/ShanechiLab/PesaranDataTools.git",
    "FolderName":"PesaranDataTools",
-   "Commit":"9cd513a4f42d8b9b38ee98948bea5722077cb755",
+   "Commit":"",
    "GetLatest":true
   }
  }
