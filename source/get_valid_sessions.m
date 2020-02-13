@@ -2,8 +2,8 @@ function [validpathlist] = get_valid_sessions(fullpathlist)
 %GET_VALID_SESSIONS Summary of this function goes here
 %   Detailed explanation goes here
 
-    if exist('./validpathlist_LFP_Archie.mat','file')
-        validpathlist = load('./validpathlist_LFP_Archie.mat');
+    if exist('D:\Data\validpathlist_LFP_Archie.mat','file')
+        validpathlist = load('D:\Data\validpathlist_LFP_Archie.mat');
     else
         validpathlist = {};
         counter = 1;
