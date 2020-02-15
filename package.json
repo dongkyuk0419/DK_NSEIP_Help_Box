@@ -1,14 +1,13 @@
 {
  "dependencies":{
-   "PackMan":{
-    "Name":"PackMan",
-    "Branch":"master",
-    "Url":"https://github.com/OmidS/PackMan.git",
-    "FolderName":"PackMan",
-    "Commit":"",
-    "GetLatest":true
-   },
-
+  "PackMan":{
+   "Name":"PackMan",
+   "Branch":"master",
+   "Url":"https://github.com/OmidS/PackMan.git",
+   "FolderName":"PackMan",
+   "Commit":"6fce7fec8b107a3d079aa37269e9ba793f406566",
+   "GetLatest":true
+  },
   "PesaranDataTools":{
    "Name":"PesaranDataTools",
    "Branch":"master",
