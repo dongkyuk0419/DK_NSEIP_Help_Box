@@ -4,6 +4,7 @@ function [validpathlist] = get_valid_sessions(fullpathlist)
 
     if exist('D:\Data\validpathlist_LFP_Archie.mat','file')
         validpathlist = load('D:\Data\validpathlist_LFP_Archie.mat');
+        validpathlist = validpathlist.validpathlist;
     else
         validpathlist = {};
         counter = 1;
