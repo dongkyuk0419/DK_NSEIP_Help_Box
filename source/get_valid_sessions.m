@@ -24,4 +24,3 @@ function [validpathlist] = get_valid_sessions(fullpathlist)
     end
 
 end
-
