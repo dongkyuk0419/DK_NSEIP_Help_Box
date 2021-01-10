@@ -21,14 +21,19 @@ function [lfp,eye,events_valid,ind_anchor_points] = load_data_saccade(Data_Path,
             i_begin = events_valid.StartOn;
         case 'TargsOn'
             i_begin = events_valid.TargsOn;
+        case 'StartTrial'
+            i_begin = events_valid.StartTrial;
     end
     switch end_ind
         case 'End'
             i_end = events_valid.End;
-            if start_ind == 'StartOn'
-                anchor_points = [events_valid.StartOn, events_valid.TargsOn, events_valid.Go, events_valid.TargAq, events_valid.End];
-            elseif start_ind == 'TargsOn'
-                anchor_points = [events_valid.TargsOn, events_valid.Go, events_valid.TargAq, events_valid.End];
+            switch start_ind
+                case 'StartOn'
+                    anchor_points = [events_valid.StartOn, events_valid.TargsOn, events_valid.Go, events_valid.TargAq, events_valid.End];
+                case 'TargsOn'
+                    anchor_points = [events_valid.TargsOn, events_valid.Go, events_valid.TargAq, events_valid.End];
+                case 'StartTrial'
+                    anchor_points = [events_valid.StartTrial, events_valid.StartOn, events_valid.TargsOn, events_valid.Go, events_valid.TargAq, events_valid.End];
             end
     end
     
